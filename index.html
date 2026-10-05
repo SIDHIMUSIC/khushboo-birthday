@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Happy Birthday Khushboo ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&family=Nunito:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --blush: #ffd6e0;
+    --rose: #f4a7b9;
+    --deep: #c45c7a;
+    --ink: #3d2430;
+    --cream: #fff8f6;
+    --gold: #e8c4a8;
+    --petal: #ffb7c5;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    font-family: "Nunito", system-ui, sans-serif;
+    color: var(--ink);
+    background:
+      radial-gradient(900px 500px at 10% -10%, #ffe4ec 0%, transparent 60%),
+      radial-gradient(800px 500px at 110% 10%, #fde8d8 0%, transparent 55%),
+      linear-gradient(180deg, #fff6f8 0%, #fff 40%, #fff4f0 100%);
+    overflow-x: hidden;
+    min-height: 100%;
+  }
+  .petals { position: fixed; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
+  .petal {
+    position: absolute;
+    top: -40px;
+    width: 14px; height: 18px;
+    background: radial-gradient(circle at 30% 30%, #fff, var(--petal));
+    border-radius: 70% 10% 70% 10%;
+    opacity: .75;
+    animation: fall linear infinite;
+    filter: drop-shadow(0 2px 2px rgba(196,92,122,.15));
+  }
+  @keyframes fall {
+    0% { transform: translateY(-10vh) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
+  }
+  .wrap {
+    position: relative;
+    z-index: 2;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 28px 20px 80px;
+  }
+  .from {
+    text-align: center;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: var(--deep);
+    font-weight: 700;
+    opacity: .8;
+  }
+  .script {
+    font-family: "Great Vibes", cursive;
+    text-align: center;
+    font-size: clamp(52px, 14vw, 78px);
+    line-height: .95;
+    color: var(--deep);
+    margin-top: 8px;
+    text-shadow: 0 8px 24px rgba(196,92,122,.18);
+  }
+  .sub {
+    font-family: "Cormorant Garamond", serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: 4px;
+    color: #7a4a5a;
+  }
+  .card {
+    margin-top: 22px;
+    background: rgba(255,255,255,.72);
+    border: 1px solid rgba(244,167,185,.45);
+    border-radius: 28px;
+    padding: 22px 18px 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 18px 50px rgba(196,92,122,.12);
+    text-align: center;
+  }
+  .monogram {
+    width: 92px; height: 92px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    display: grid; place-items: center;
+    background:
+      radial-gradient(circle at 35% 30%, #fff, #ffd0dc 55%, #f4a7b9);
+    border: 3px solid #fff;
+    box-shadow: 0 10px 24px rgba(196,92,122,.22);
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    color: var(--deep);
+  }
+  h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: .02em;
+  }
+  .wish {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    line-height: 1.45;
+    margin: 12px 0 6px;
+    color: #5c3342;
+  }
+  .by {
+    font-size: 13px;
+    color: #8a5a68;
+    margin-top: 8px;
+  }
+  .by a { color: var(--deep); text-decoration: none; font-weight: 700; }
+  .hearts {
+    display: flex; justify-content: center; gap: 8px;
+    margin: 16px 0 4px; font-size: 22px;
+  }
+  .tap {
+    margin-top: 14px;
+    border: 0;
+    background: linear-gradient(135deg, #f7b7c8, #e989a4);
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    box-shadow: 0 10px 22px rgba(196,92,122,.28);
+    cursor: pointer;
+  }
+  .tap:active { transform: scale(.97); }
+  .note {
+    margin-top: 18px;
+    background: #fff;
+    border-radius: 22px;
+    padding: 18px 16px;
+    border: 1px dashed rgba(196,92,122,.35);
+  }
+  .note h2 {
+    font-family: "Great Vibes", cursive;
+    font-size: 34px;
+    color: var(--deep);
+    font-weight: 400;
+    text-align: center;
+  }
+  .note p {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.65;
+    text-align: center;
+    color: #4a2c36;
+  }
+  .grid {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .pill {
+    background: rgba(255,255,255,.8);
+    border-radius: 18px;
+    padding: 14px 10px;
+    text-align: center;
+    border: 1px solid rgba(244,167,185,.35);
+  }
+  .pill b {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    color: var(--deep);
+  }
+  .pill span { font-size: 12px; color: #8a5a68; }
+  footer {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 12px;
+    color: #a06b7a;
+  }
+  .burst {
+    position: fixed; inset: 0; pointer-events: none; z-index: 5;
+  }
+  .conf {
+    position: absolute;
+    width: 8px; height: 12px;
+    border-radius: 2px;
+    animation: pop 1.1s ease-out forwards;
+  }
+  @keyframes pop {
+    to { transform: translate(var(--x), var(--y)) rotate(220deg); opacity: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="petals" id="petals"></div>
+<div class="burst" id="burst"></div>
+<div class="wrap">
+  <p class="from">a little page · just for you</p>
+  <div class="script">Happy Birthday</div>
+  <p class="sub">to the softest kind of magic</p>
+
+  <section class="card">
+    <div class="monogram">K</div>
+    <h1>Khushboo</h1>
+    <p class="wish">May your day smell like fresh flowers, feel like warm light, and stay as sweet as your name.</p>
+    <div class="hearts" aria-hidden="true">🌸 ♡ 🌷 ♡ 🌸</div>
+    <button class="tap" id="wishBtn" type="button">Make a wish ✦</button>
+    <p class="by">with love from <a href="https://t.me/Vidyanshu_xv" target="_blank" rel="noopener">Vidyanshu</a></p>
+  </section>
+
+  <section class="note">
+    <h2>for Khushboo</h2>
+    <p>
+      Khushboo, aaj ka din sirf tera hai. Jitni pyaari teri muskaan hai, utni hi khushiyan tere saath rahein.
+      Har wish poori ho, har din thoda extra soft lage, aur tu hamesha itni hi cute, calm aur khush rahe.
+    </p>
+    <p style="margin-top:10px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;">
+      “You are the gentle kind of beautiful.”
+    </p>
+  </section>
+
+  <div class="grid">
+    <div class="pill"><b>soft</b><span>like petals</span></div>
+    <div class="pill"><b>bright</b><span>like morning</span></div>
+    <div class="pill"><b>kind</b><span>like you</span></div>
+    <div class="pill"><b>forever</b><span>worth celebrating</span></div>
+  </div>
+
+  <footer>
+    made with ♡ by Vidyanshu · t.me/Vidyanshu_xv
+  </footer>
+</div>
+<script>
+  const petals = document.getElementById("petals");
+  for (let i = 0; i < 18; i++) {
+    const p = document.createElement("div");
+    p.className = "petal";
+    p.style.left = Math.random() * 100 + "%";
+    p.style.animationDuration = (7 + Math.random() * 8) + "s";
+    p.style.animationDelay = (-Math.random() * 10) + "s";
+    p.style.transform = "scale(" + (0.6 + Math.random() * 0.8) + ")";
+    p.style.opacity = 0.45 + Math.random() * 0.4;
+    petals.appendChild(p);
+  }
+  function burst() {
+    const box = document.getElementById("burst");
+    const colors = ["#f4a7b9", "#ffd6e0", "#e8c4a8", "#fff", "#c45c7a", "#ffb7c5"];
+    for (let i = 0; i < 42; i++) {
+      const c = document.createElement("div");
+      c.className = "conf";
+      c.style.left = "50%";
+      c.style.top = "42%";
+      c.style.background = colors[i % colors.length];
+      c.style.setProperty("--x", (Math.random() * 280 - 140) + "px");
+      c.style.setProperty("--y", (Math.random() * -260 - 20) + "px");
+      box.appendChild(c);
+      setTimeout(() => c.remove(), 1100);
+    }
+  }
+  document.getElementById("wishBtn").addEventListener("click", burst);
+  setTimeout(burst, 700);
+</script>
+</body>
+</html>
