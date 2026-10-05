@@ -56,12 +56,21 @@
     text-align: center;
   }
   .monogram {
-    width: 92px; height: 92px; margin: 0 auto 10px; border-radius: 50%;
-    display: grid; place-items: center;
-    background: radial-gradient(circle at 35% 30%, #fff, #ffd0dc 55%, #f4a7b9);
+    width: 210px;
+    height: 250px;
+    margin: 0 auto 12px;
+    border-radius: 22px;
+    overflow: hidden;
     border: 3px solid #fff;
-    box-shadow: 0 10px 24px rgba(196,92,122,.22);
-    font-family: "Playfair Display", serif; font-size: 40px; color: var(--deep);
+    box-shadow: 0 12px 28px rgba(196,92,122,.22);
+    background: #ffe4ec;
+  }
+  .monogram img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    display: block;
   }
   h1 { font-family: "Playfair Display", serif; font-weight: 700; font-size: 34px; }
   .wish { font-family: "Cormorant Garamond", serif; font-size: 19px; line-height: 1.45; margin: 12px 0 6px; color: #5c3342; }
@@ -113,7 +122,7 @@
   <p class="sub">to the softest kind of magic</p>
 
   <section class="card">
-    <div class="monogram">K</div>
+    <div class="monogram"><img src="squad.jpg" alt="Khushboo squad" /></div>
     <h1>Khushboo</h1>
     <p class="wish">May your day smell like fresh flowers, feel like warm light, and stay as sweet as your name.</p>
     <div class="hearts" aria-hidden="true">🌸 ♡ 🌷 ♡ 🌸</div>
